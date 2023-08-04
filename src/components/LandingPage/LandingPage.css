@@ -1,0 +1,62 @@
+.landingPage .header {
+  background-color: #1480EC;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.landingPage .header .navbar {
+  background-color: #1480EC;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+}
+.landingPage .header .navbar .happyhub {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.landingPage .header .navbar .happyhub .image2 {
+  margin-left: 37px;
+}
+.landingPage .header .navbar .nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+}
+.landingPage .header .navbar .nav-menu .nav-item {
+  margin-left: 80px;
+}
+.landingPage .header .navbar .nav-menu .nav-item .nav-link {
+  font-weight: 200;
+  color: #fff;
+}
+.landingPage .header .navbar .nav-menu .nav-item .nav-link:hover {
+  font-weight: 600;
+}
+.landingPage .header .navbar .nav-menu .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 31px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.39);
+  border: 1px solid transparent;
+  color: #fff;
+  font-size: 15px;
+}
+.landingPage .header .navbar .nav-menu .nav-item:nth-child(1) {
+  margin: 0;
+}
+@media (max-width: 992px) {
+  .landingPage .header .navbar .nav-menu {
+    display: none;
+  }
+}/*# sourceMappingURL=LandingPage.css.map */

@@ -1,0 +1,69 @@
+@import '../varMixins';
+
+.landingPage{
+    .header{
+        background-color: $blue;
+        width: 100%;
+        @include flex-center;
+        .navbar{
+            background-color: $blue;
+            width: 100%;
+            @include padding-tb(20px, 20px);
+            display: flex;
+            justify-content: space-between;
+            z-index: 999;
+            position: fixed;
+            top: 0;
+    
+            .happyhub{
+                margin-left: 50px;
+                @include flex-center;
+                .image2{
+                   margin-left: 37px; 
+                }
+            }
+    
+            .nav-menu{
+                @include flex-center;
+                margin-right: 50px;
+    
+                .nav-item{
+                    margin-left: 80px;
+                    .nav-link{
+                        font-weight: 200;
+                        color: $white;
+                    }
+                    .nav-link:hover{
+                        font-weight: 600;
+                    }
+                }
+    
+                .button{
+                    @include flex-center;
+                    padding: 12px 31px ;
+                    border-radius: 12px;
+                    background: rgba(255, 255, 255, 0.39);
+                    border: 1px solid transparent;
+                    color: $white;
+                    font-size: 15px;
+                }
+    
+                .nav-item:nth-child(1){
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+
+
+    @include tab{
+        .header{
+            .navbar{
+                .nav-menu{
+                    display: none;
+                }
+            }
+        }
+    }
+}
