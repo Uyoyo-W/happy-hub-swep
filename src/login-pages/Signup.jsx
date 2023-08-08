@@ -6,7 +6,7 @@ import "../login-styles/App.css"
 
 function Signup() {
   return (
-    <div>
+    <div className='signup'>
         <div className='sign-up-container'>
             <img src={logo} className="app-logo" alt="logo" />
             <h1 className='hidden'>Happyhub</h1>

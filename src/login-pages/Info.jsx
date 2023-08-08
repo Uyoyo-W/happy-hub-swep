@@ -6,6 +6,7 @@ import "../login-styles/App.css"
 
 function Info() {
   return (
+    <div className='info'>
         <div className='info-container'>
             <img src={logo} className="app-logo" alt="logo" />
             <h1 className='hidden'>Happyhub</h1>
@@ -90,6 +91,7 @@ function Info() {
             </form>
             <button className='info-btn'><Link to="/Contact" className='info-link'>Continue</Link></button>
         </div>
+    </div>
     
   )
 }
