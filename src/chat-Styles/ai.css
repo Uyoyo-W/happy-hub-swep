@@ -1,0 +1,75 @@
+.chat {
+  background-color: #1480EC;
+  height: 100vh;
+}
+
+.link-decor {
+  text-decoration: none;
+}
+.link-decor .decor {
+  text-decoration: none;
+  color: #fff;
+}
+
+.lost {
+  font-family: "Pacifico", cursive;
+  font-size: 3em;
+}
+
+.chat-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "logo-container chat-area" "links          chat-area" "utility        chat-area";
+}
+
+.logo-container {
+  grid-area: logo-container;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.links {
+  grid-area: links;
+  display: flex;
+  flex-direction: column;
+  border: 1px red solid;
+  font-size: 1.5em;
+}
+
+.utility {
+  grid-area: utility;
+  border: 1px red solid;
+}
+
+.chat-area {
+  grid-area: chat-area;
+  border: 1px red solid;
+  position: relative;
+  background-color: #fff;
+}
+
+textarea {
+  width: 94%;
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  border-radius: 10px;
+  left: 7px;
+  background-color: transparent;
+  border: 4px solid #EEF0F9;
+  padding: 0px 0 10px 20px;
+  color: #000;
+  font-size: 1.5em;
+}
+textarea::-moz-placeholder {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+textarea::placeholder {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}/*# sourceMappingURL=ai.css.map */

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Contact() {
   return (
-    <div>
+    <div className='contact'>
         <div className='contact-container'>
             <img src={logo} className="app-logo" alt="logo" />
             <h1 className='hidden'>Happyhub</h1>
@@ -18,7 +18,7 @@ function Contact() {
                 <label htmlFor="contact-two-email" className='label-2'>Contact 2</label>
                 <input placeholder='Email' type='email'  id="contact-two-email" name='email' className='contact-two-mail'></input>
                 <input placeholder='Phone Number' type='text' name='number' className='phone-number-two'></input>
-                <button className='finish'><Link  className='contact-link'>Finish</Link></button>          
+                <button className='finish'><Link to="/Aichat" className='contact-link'>Finish</Link></button>          
             </form>
         </div>
     </div>

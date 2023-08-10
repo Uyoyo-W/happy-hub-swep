@@ -8,13 +8,23 @@ $btnsmallsize:.7em;
 $gridwidth:20em;
 // @import 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+
+// #root {
+//   max-width: 1280px;
+//   margin: 0 auto;
+//   text-align: center;
+//   border:1px solid red;
+// }
 /*******Log In Page Start************/
+.App{
+  background-image: url("../login-assets/sign-in-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  text-align: center;
+  height:100vh;
+}
 .hidden{
   display:none;
 }
@@ -29,6 +39,7 @@ $gridwidth:20em;
   align-items: center;
   flex-direction: column;
   margin:0 auto;
+  padding: 2rem;
   form{
     width:38em;
     display:grid;
@@ -73,7 +84,8 @@ $gridwidth:20em;
     border:none;
     font-size:$btnsize;
     grid-area:forgot;
-    justify-self:right;
+    justify-self:flex-end;
+    margin-left:-120px;
   }
   .sign-in-btn{
     grid-area:sign-in;
@@ -101,7 +113,7 @@ $gridwidth:20em;
 }
 @media screen and (max-width:425px){
   .login-header{
-    margin-top:6em;
+    margin-top:5em;
   }
   .hidden{
     font-family: 'Pacifico', cursive;
@@ -117,6 +129,7 @@ $gridwidth:20em;
     form{
       margin-top:1em;
       width:$gridwidth;
+      justify-content: center;
       display: grid;
       grid-template-columns: 8em 8em 4em;
       grid-template-rows:2.5em 2.5em 1em 3.5em 1em;
@@ -135,6 +148,7 @@ $gridwidth:20em;
     .email{
       grid-area: input-1;
       justify-self:center;
+      margin-left:120px;
     }
     .pass{
       grid-area:input-2;
@@ -142,6 +156,8 @@ $gridwidth:20em;
     }
     .forgot-btn{
       grid-area:forgot;
+      justify-content: center;
+      border:1px solid red;
     }
     .sign-in-btn{
       grid-area:sign-in;
@@ -154,6 +170,16 @@ $gridwidth:20em;
 }
 /*******Log In Page End************/
 /*******Sigm Up Page Start************/
+.signup{
+  background-image: url("../login-assets/sign-in-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  text-align: center;
+  height:100vh;
+  padding-top:2rem;
+}
 .sign-up-container{
   display:flex;
   align-items: center;
@@ -297,6 +323,16 @@ $gridwidth:20em;
 }
 /*******SIgn Up Page End************/
 /*******Info Start************/
+.info{
+  background-image: url("../login-assets/sign-in-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  text-align: center;
+  height:100vh;
+  padding-top:2rem;
+}
 .info-container{
   display:flex;
   align-items: center;
@@ -441,7 +477,7 @@ form{
     width:$gridwidth;
     display:grid;
     justify-content: center;
-    grid-template-columns: 6em 6em 6em 2em;
+    grid-template-columns: 7em 7em 4em 2em;
     grid-template-rows:3em 3em 3em 1.5em 1em;
     row-gap:2em;
     column-gap:20px;
@@ -449,7 +485,7 @@ form{
     "input-1 input-1 input-1 input-1"
     "input-2 input-2 input-2 input-2"
     "month   day     year     year  "
-    "male    female   empty    empty"
+    "male    male   female    female"
     "info    info    info     info  ";
     .fname{
       grid-area: input-1;
@@ -496,7 +532,7 @@ form{
     }
     .radio-male{
       grid-area:male;
-      justify-self: flex-end;
+      justify-self:center;
       label{
       font-size:$btnsize;
       font-weight:500;
@@ -504,7 +540,7 @@ form{
     }
     .radio-female{
       grid-area:female;
-      justify-self: start;
+      justify-self: left;
       label{
       font-size:$btnsize;
       font-weight:500;
@@ -519,6 +555,17 @@ form{
 }
 /*******Info End************/
 /*******Contact Start************/
+.contact{
+  background-image: url("../login-assets/sign-in-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  text-align: center;
+  height:100vh;
+  padding-top:1rem;
+  overflow-y: hidden;
+}
 .contact-container{
   display:flex;
   align-items: center;
