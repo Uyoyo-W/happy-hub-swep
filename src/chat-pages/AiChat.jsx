@@ -16,7 +16,7 @@ import { useState } from 'react';
 function Aichat() {
   const [chatInput, setChatInput] = useState("");
   const [chatOutput, setChatOutput] = useState("");
-  
+
   const handleChatInput = (e) => {
     console.log(e.target.value)
     setChatInput(e.target.value)
@@ -26,7 +26,7 @@ function Aichat() {
     const formdata = new FormData();
     formdata.append("user_input", chatInput);
     console.log(chatInput)
-    
+
     const options = {
       method: 'POST',
       body: formdata,
@@ -37,7 +37,7 @@ function Aichat() {
     const resp = await req.text();
     console.log(`After: ${resp}`)
     setChatOutput(resp);
-    
+
     setChatInput("")
   }
   return (
