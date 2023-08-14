@@ -1,12 +1,12 @@
 .landingPage .header {
-  background-color: #1480EC;
+  background-color: #fff;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.landingPage .header .navbar {
-  background-color: #1480EC;
+.landingPage .header nav {
+  background-color: #fff;
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -16,47 +16,493 @@
   position: fixed;
   top: 0;
 }
-.landingPage .header .navbar .happyhub {
+.landingPage .header nav .happyhub {
   margin-left: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.landingPage .header .navbar .happyhub .image2 {
+.landingPage .header nav .happyhub .image2 {
   margin-left: 37px;
 }
-.landingPage .header .navbar .nav-menu {
+.landingPage .header nav .nav-menu {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 50px;
+  margin-right: 55px;
 }
-.landingPage .header .navbar .nav-menu .nav-item {
+.landingPage .header nav .nav-menu .nav-item {
   margin-left: 80px;
 }
-.landingPage .header .navbar .nav-menu .nav-item .nav-link {
+.landingPage .header nav .nav-menu .nav-item .nav-link {
   font-weight: 200;
-  color: #fff;
+  font-size: 18px;
+  color: #1480EC;
 }
-.landingPage .header .navbar .nav-menu .nav-item .nav-link:hover {
-  font-weight: 600;
+.landingPage .header nav .nav-menu .nav-item .nav-link:hover {
+  font-weight: 500;
 }
-.landingPage .header .navbar .nav-menu .button {
+.landingPage .header nav .nav-menu .button {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 31px;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.39);
+  padding: 13px 30px;
+  border-radius: 20px;
+  background: rgba(20, 128, 236, 0.39);
   border: 1px solid transparent;
-  color: #fff;
-  font-size: 15px;
+  color: #1480EC;
+  font-size: 17px;
+  font-weight: 600;
 }
-.landingPage .header .navbar .nav-menu .nav-item:nth-child(1) {
+.landingPage .header nav .nav-menu .nav-item:nth-child(1) {
   margin: 0;
 }
+.landingPage .header nav .menu {
+  display: none;
+}
+.landingPage .hero {
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 220px;
+  padding-left: 70px;
+  padding-right: 70px;
+  background-image: url(./assets/Rectangle.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 89.6%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.landingPage .hero .text {
+  color: #fff;
+  margin-top: 50px;
+}
+.landingPage .hero .text h1 {
+  font-size: 45px;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+.landingPage .hero .text h1 .better {
+  font-weight: 700;
+}
+.landingPage .hero .text .button {
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  color: #1480EC;
+  padding: 8px 40px;
+}
+.landingPage .hero .AI {
+  width: 32%;
+  margin-top: 60px;
+  margin-right: 50px;
+}
+.landingPage .hero .AI img {
+  width: 100%;
+}
+.landingPage .allFeatures {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.landingPage .allFeatures .line {
+  border-top: 2px solid black;
+  width: 100px;
+  margin-bottom: -70px;
+}
+.landingPage .allFeatures .features {
+  background-color: rgba(20, 128, 236, 0.6);
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 170px;
+  padding-bottom: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-image: url("./assets/bg-blue.svg"), url("./assets/bg-white.svg");
+  background-repeat: no-repeat;
+  background-position: 60px 110px, 870px 120px;
+}
+.landingPage .allFeatures .features .line {
+  border: 3px solid black;
+  line-height: 20px;
+}
+.landingPage .allFeatures .features .feature {
+  width: 14%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px 30px 20px;
+}
+.landingPage .allFeatures .features .feature .icon {
+  width: 55px;
+}
+.landingPage .allFeatures .features .feature h3 {
+  font-weight: 600;
+  font-size: 22px;
+}
+.landingPage .allFeatures .features .feature .p1 {
+  margin: 0;
+}
+.landingPage .allFeatures .features .feature .bottom {
+  display: flex;
+}
+.landingPage .allFeatures .features .feature .bottom .p2 {
+  color: #1480EC;
+  font-weight: 500;
+}
+.landingPage .allFeatures .features .feature .bottom .arrow {
+  margin-top: 3px;
+  margin-left: 5px;
+  width: 20px;
+}
+.landingPage .pageBottom {
+  padding-top: 50px;
+  padding-bottom: 0px;
+}
+.landingPage .pageBottom .get {
+  display: flex;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.landingPage .pageBottom .get .app {
+  width: 50%;
+  background-image: url("./assets/bg-blue.svg"), url("./assets/bg-blue.svg");
+  background-repeat: no-repeat;
+  background-position: 60px 170px, 310px 25px;
+  background-size: 80px, 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-right: 25%;
+}
+.landingPage .pageBottom .get .app .text {
+  margin-top: 70px;
+  text-align: center;
+  align-items: center;
+}
+.landingPage .pageBottom .get .app .text h1 {
+  font-size: 60px;
+  margin: 0;
+}
+.landingPage .pageBottom .get .app .text h4 {
+  font-size: 27px;
+  font-weight: 500;
+  margin: 10px 0 20px;
+}
+.landingPage .pageBottom .get .app .stores {
+  display: flex;
+}
+.landingPage .pageBottom .get .app .stores .store {
+  background-color: #1480EC;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.landingPage .pageBottom .get .app .stores .store img {
+  width: 40px;
+}
+.landingPage .pageBottom .get .app .stores .apple {
+  margin-right: 30px;
+}
+.landingPage .pageBottom .get .phones {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.landingPage .pageBottom .get .phones .phone2 {
+  margin-top: 110px;
+  margin-left: 40px;
+}
+.landingPage .pageBottom .get .phones .phone {
+  width: 240px;
+}
+.landingPage .pageBottom .get .phones .phone img {
+  width: 100%;
+}
+.landingPage .pageBottom .footer {
+  background-image: url(./assets/RectangleBottom.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  padding: 230px 70px 50px;
+  height: 100%;
+  justify-content: space-between;
+}
+.landingPage .pageBottom .footer .happyhub p {
+  color: rgba(255, 255, 255, 0.7);
+  width: 30%;
+}
+.landingPage .pageBottom .footer .resources {
+  display: flex;
+}
+.landingPage .pageBottom .footer .resources .menus {
+  display: flex;
+}
+.landingPage .pageBottom .footer .resources .menus .menu {
+  margin-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.landingPage .pageBottom .footer .resources .menus .menu h6 {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.landingPage .pageBottom .footer .resources .menus .menu .link {
+  color: rgba(255, 255, 255, 0.7);
+}
+@media (max-width: 1200px) {
+  .landingPage .header nav .happyhub .image1 img {
+    width: 90px;
+  }
+  .landingPage .header nav .happyhub .image2 {
+    margin-left: 27px;
+  }
+  .landingPage .header nav .happyhub .image2 img {
+    width: 100px;
+  }
+  .landingPage .header nav .nav-menu .nav-item {
+    margin-left: 40px;
+  }
+  .landingPage .header nav .nav-menu .nav-item .nav-link {
+    font-size: 16px;
+  }
+  .landingPage .header nav .nav-menu .button {
+    font-size: 16px;
+  }
+  .landingPage .hero {
+    width: 86%;
+    padding-bottom: 230px;
+  }
+  .landingPage .hero .text {
+    width: 40%;
+  }
+  .landingPage .hero .text h1 {
+    margin-top: 0;
+    font-size: 37px;
+  }
+  .landingPage .hero .AI {
+    width: 30%;
+  }
+  .landingPage .allFeatures .features {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .landingPage .allFeatures .features .feature {
+    width: 37%;
+    margin-bottom: 40px;
+  }
+  .landingPage .pageBottom .get .app {
+    padding-right: 10%;
+  }
+}
 @media (max-width: 992px) {
-  .landingPage .header .navbar .nav-menu {
-    display: none;
+  .landingPage .header nav {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  .landingPage .header nav .happyhub {
+    margin-left: 40px;
+  }
+  .landingPage .header nav .happyhub .image1 img {
+    width: 60px;
+  }
+  .landingPage .header nav .nav-menu {
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    position: absolute;
+    padding: 0;
+    padding-top: 20px;
+    margin-top: 0;
+    top: 100px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    background-color: red;
+  }
+  .landingPage .header nav .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0;
+    padding-right: 60px;
+    background-color: #fff;
+  }
+  .landingPage .hero {
+    width: 89.1%;
+    padding-bottom: 100px;
+    padding-top: 20px;
+    background-size: cover;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .landingPage .hero .text {
+    width: 40%;
+  }
+  .landingPage .hero .text h1 {
+    margin-top: 0;
+    font-size: 30px;
+  }
+  .landingPage .hero .AI {
+    width: 30%;
+  }
+  .landingPage .allFeatures .features {
+    padding-left: 70px;
+    padding-right: 70px;
+    background-position: 60px 110px, 60% 70%;
+    background-size: 100px, 100px;
+    background-repeat: no-repeat;
+  }
+  .landingPage .allFeatures .features .feature {
+    width: 33%;
+  }
+  .landingPage .pageBottom .get {
+    display: flex;
+    flex-direction: column;
+  }
+  .landingPage .pageBottom .get .app {
+    padding-right: 0%;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    background-position: 0% 120%, 310px 25px;
+    background-size: 110px, 110px;
+    margin-top: -40px;
+    padding-bottom: 60px;
+  }
+  .landingPage .pageBottom .get .app .text h4 {
+    width: 100%;
+    text-align: start;
+  }
+  .landingPage .pageBottom .get .phones {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 768px) {
+  .landingPage .pageBottom .get {
+    margin-bottom: 40px;
+  }
+  .landingPage .pageBottom .get .phones .phone {
+    width: 200px;
+  }
+  .landingPage .pageBottom .footer {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 30px 10px;
+  }
+  .landingPage .pageBottom .footer .happyhub {
+    margin-bottom: 30px;
+  }
+  .landingPage .pageBottom .footer .happyhub p {
+    margin-top: 0;
+  }
+  .landingPage .pageBottom .footer .resources .help {
+    padding-left: 0;
+  }
+}
+@media (max-width: 590px) {
+  .landingPage .allFeatures .features {
+    padding-left: 110px;
+    padding-right: 110px;
+    background-position: 10% 10%, 80% 50%;
+    background-size: 80px, 80px;
+  }
+  .landingPage .allFeatures .features .feature {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .landingPage .pageBottom .get {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .landingPage .pageBottom .get .app .text h1 {
+    font-size: 55px;
+    width: 70%;
+    text-align: start;
+  }
+  .landingPage .pageBottom .get .app .text h4 {
+    width: 100%;
+    text-align: start;
+  }
+  .landingPage .pageBottom .get .phones {
+    width: 90%;
+  }
+  .landingPage .pageBottom .footer .happyhub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .landingPage .pageBottom .footer .happyhub p {
+    text-align: center;
+  }
+  .landingPage .pageBottom .footer .resources .menus {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .landingPage .pageBottom .footer .resources .menus .menu {
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .landingPage .pageBottom .footer .resources .menus .menu h6 {
+    font-size: 16px;
+  }
+  .landingPage .pageBottom .footer .resources .menus .menu .link {
+    font-size: 15px;
+  }
+  .landingPage .pageBottom .footer .resources .menus .help {
+    padding-left: 0;
+  }
+}
+@media (max-width: 425px) {
+  .landingPage .allFeatures .features {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  .landingPage .allFeatures .features .feature {
+    width: 100%;
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+  .landingPage .allFeatures .features .feature .icon {
+    width: 50px;
+  }
+  .landingPage .allFeatures .features .feature h3 {
+    font-size: 20px;
+  }
+  .landingPage .pageBottom .get .app .text h1 {
+    width: 90%;
+    font-size: 45px;
   }
 }/*# sourceMappingURL=LandingPage.css.map */

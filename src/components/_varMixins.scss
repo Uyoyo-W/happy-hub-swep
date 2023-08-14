@@ -1,8 +1,27 @@
+// SIZES
+$borderradius:14px;
+$btnsize:1.3em;
+$justify:center;
+$inputwidth:7em;
+$inputscreenwidth:5em;
+$inputbg:transparent;
+$btnsmallsize:.7em;
+$gridwidth:20em;
+
+
 // COLOURS
 $blue: #1480EC;
-$lightBlue: rgba(255, 255, 255, 0.39);
+$blue2: #8ABDF4;
+$blue3: #8FB6FC;
+$lightBlue: rgba(20, 128, 236, 0.60);
+$Background: rgba(255, 255, 255, 0.39);
+$Background2: #EEF0F9;
 $white: #fff;
+$pale: rgba(255, 255, 255, 0.70);
 $black: #000;
+$red: #D92C2C;
+$grey: #888888; 
+$grey2: #5E5555;
 
 
 
@@ -145,4 +164,9 @@ $phone: 425px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+@mixin sectionPadding-lr{
+    padding-left: 70px;
+    padding-right: 70px;
 }

@@ -1,47 +1,31 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import Signin from './login-pages/SignIn.jsx'
-import './index.css'
-import Signup from './login-pages/SignUp.jsx'
-import Info from './login-pages/Info.jsx'
-import Contact from './login-pages/Contact.jsx'
-import Aichat from './chat-pages/AiChat.jsx'
-import "./login-styles/App.css"
-import Settings from "./chat-pages/Settings.jsx"
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import LandingPage from './components/LandingPage/LandingPage';
+import SignIn from './components/login-pages/Signin';
+// import SignUp from './components/login-pages/Signup';
+// import Info from './components/login-pages/Info';
+// import Contact from './components/login-pages/Contact';
+// import AiChat from './components/chat-pages/Aichat';
+// import Settings from './components/chat-pages/Settings';
+import { createRoot } from 'react-dom/client';
+import './global.scss';
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Signin/>,
-  },
-  {
-    path: "Signup",
-    element: <Signup/>,
-  },
-  {
-    path: "Info",
-    element: <Info/>,
-  },
-  {
-    path: "Contact",
-    element: <Contact/>,
-  },
-  {
-    path: "Aichat",
-    element: <Aichat />,
-  },
-  {
-    path: "Settings",
-    element: <Settings />,
-  },
-]);
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="sign-in" element={<SignIn />} />
+        {/* <Route path="sign-up" element={<SignUp />} />
+        <Route path="info" element={<Info />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="aiChat" element={<AiChat />} />
+        <Route path="settings" element={<Settings />} /> */}
+      </Routes>
+    </Router>
+  );
+}
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>,
-)
+const rootElement = document.getElementById('root');
+const root = createRoot(rootElement); // Use createRoot from "react-dom/client"
+root.render(<App />);

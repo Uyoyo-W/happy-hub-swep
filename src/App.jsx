@@ -1,25 +1,27 @@
-import '../src/login-styles/App.css'
-import logo from '../src/login-assets/Logo.svg'
-import { Link } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LandingPage from './components/LandingPage/LandingPage';
+import SignIn from './components/login-pages/Signin';
+import SignUp from './components/login-pages/Signup';
+import Info from './components/login-pages/Info';
+import Contact from './components/login-pages/Contact';
+import AiChat from './components/chat-pages/Aichat';
+import Settings from './components/chat-pages/Settings';
+
+
 
 function App() {
-
   return (
-    <div className='App'>
-      <div className='form-container'>
-        <img src={logo} className="app-logo" alt="logo" />
-        <h1 className='hidden'>Happyhub</h1>
-        <h1 className='login-header'>Login</h1>
-        <form>
-          <input placeholder='Email' type='email' name='email' className='mail'></input>
-          <input placeholder='Password' type='password' name="password" className='pass'></input>
-          <button className='forgot-btn'>Forgot Password?</button>
-          <button className='sign-in-btn'><Link to="/Signup" className='decor'>Sign In</Link></button>
-          <h4 className='sign-up'>Don&apos;t have an Account?<button><Link to="/Signup" className='decor'>Sign Up For Free</Link></button></h4>
-        </form>
-      </div>
-    </div>
-  )
+    <Routes>
+      <Route exact path='/' elemet={<LandingPage />} />
+      <Route path='sign-in' element={<SignIn/>} />
+      <Route path='sign-up' element={<SignUp/>} />
+      <Route path='info' element={<Info/>} />
+      <Route path='contact' element={<Contact/>} />
+      <Route path='aiChat' element={<AiChat/>} />
+      <Route path='settings' element={<Settings/>} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;
