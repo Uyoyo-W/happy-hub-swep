@@ -1,17 +1,19 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
-import logo from '../login-assets/Logo.svg'
-import { NavLink } from 'react-router-dom'
+import logo from '../login-assets/Logo.svg';
+import happyhub from '../chat-assets/Happpyhub.png'
+import { NavLink } from 'react-router-dom';
 import { Link } from "react-router-dom";
-import '../chat-Styles/ai.css'
-import Activities from "../chat-assets/activities.svg"
-import Buddy from "../chat-assets/Buddy.svg"
-import Community from "../chat-assets/community.svg"
-import Help from "../chat-assets/help.svg"
-import SettingsImg from "../chat-assets/settings.svg"
-import Log from "../chat-assets/bx_log-out.svg"
-import Send from "../chat-assets/send.svg"
+import Activities from "../chat-assets/activities.svg";
+import Buddy from "../chat-assets/Buddy.svg";
+import Community from "../chat-assets/community.svg";
+import Help from "../chat-assets/help.svg";
+import SettingsImg from "../chat-assets/settings.svg";
+import Log from "../chat-assets/bx_log-out.svg";
+import Send from "../chat-assets/send.svg";
 import { useState } from 'react';
+import '../chat-Styles/ai.scss';
+
 
 function AiChat() {
   const [chatInput, setChatInput] = useState("");
@@ -44,29 +46,26 @@ function AiChat() {
     <div className="chat">
       <div className='chat-container'>
         <div className='nav-container'>
-          <nav>
+          <nav className='ai-nav'>
             <div className='logo-container'>
-              <img src={logo} alt="logo" style={{
-                height: 80,
-                width: 80,
-              }}></img>
-              < h1 className='lost'>Happyhub</h1>
+              <img src={logo} alt="logo" className='logo'></img>
+              <img src={happyhub} className='happy'></img>
             </div>
             <div className='links'>
-              <NavLink className='link-decor'><Link className="decor"><img src={Buddy}></img>Buddy</Link></NavLink>
-              <NavLink className='link-decor'><Link className="decor"><img src={Activities}></img>Exercises</Link></NavLink>
-              <NavLink className='link-decor'><Link className="decor"><img src={Community}></img>Community</Link></NavLink>
+              <Link className="decor bud"><img src={Buddy}></img><p>Buddy</p></Link>
+              <Link className="decor"><img src={Community}></img><p>Community</p></Link>
+              <Link className="decor"><img src={Activities}></img><p>Exercises</p></Link>
             </div>
             <div className='utility'>
-              <NavLink className='link-decor'><Link className="decor"><img src={Help}></img> Get Help</Link></NavLink>
-              <NavLink className='link-decor'><Link className="decor" to="/Settings"><img src={SettingsImg}></img>Settings</Link></NavLink>
-              <NavLink className='link-decor'><Link className="decor"><img src={Log}></img>Log Out</Link></NavLink>
+              <Link className="decor"><img src={Help}></img> <p>Get Help</p></Link>
+              <Link className="decor" to="/Settings"><img src={SettingsImg}></img><p>Settings</p></Link>
+              <Link className="decor"><img src={Log}></img><p>Log Out</p></Link>
             </div>
           </nav>
         </div>
         <div className='chat-area'>
-          <div className='see-message' style={{fontSize: "16px", color: "black", fontWeight: "bold"}}>
-            {chatOutput}
+          <div className='see-message' style={{fontSize: "16px", color: "black", fontWeight: "500"}}>
+            <p>{chatOutput}</p>
           </div>
           <div className='send-message'>
             <textarea value={chatInput} onChange={handleChatInput} placeholder='Tell me, what&#39;s on your mind'></textarea>

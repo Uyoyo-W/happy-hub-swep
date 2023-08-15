@@ -7,7 +7,7 @@ import SignIn from './components/login-pages/Signin';
 import SignUp from './components/login-pages/Signup';
 import Info from './components/login-pages/Info';
 import Contact from './components/login-pages/Contact';
-// import AiChat from './components/chat-pages/Aichat';
+import AiChat from './components/chat-pages/Aichat';
 // import Settings from './components/chat-pages/Settings';
 // import GetHelp from './components/GetHelp/GetHelp';
 import './global.scss';
@@ -21,8 +21,8 @@ function App() {
         <Route path="sign-up" element={< SignUp />} />
         <Route path="info" element={< Info />} />
         <Route path="contact" element={< Contact />} />
-        {/* <Route path="aiChat" element={< AiChat />} />
-        <Route path="settings" element={< Settings />}  />
+        <Route path="aiChat" element={< AiChat />} />
+        {/*<Route path="settings" element={< Settings />}  />
         <Route path="get-help" element={< GetHelp />}  /> */}
       </Routes>
     </Router>
