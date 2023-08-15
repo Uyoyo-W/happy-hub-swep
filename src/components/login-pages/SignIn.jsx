@@ -15,7 +15,7 @@ function SignIn() {
           <input placeholder='Email' type='email' name='email' className='input mail'></input>
           <input placeholder='Password' type='password' name="password" className='input pass'></input>
           <button className='forgot-btn'>Forgot Password?</button>
-          <Link to="/Signup"><button className='sign-in-btn'>Sign In</button></Link>
+          <Link to="/sign-up"><button className='sign-in-btn'>Sign In</button></Link>
         </form>
         <h4 className='sign-up'>Don&apos;t have an account?<Link to="/Signup" className='decor'>Sign up for free</Link></h4>
 
