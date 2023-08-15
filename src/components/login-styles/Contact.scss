@@ -1,0 +1,182 @@
+@import '../varMixins';
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Nunito+Sans&display=swap');
+
+
+
+/*******Contact Start************/
+.contact{
+  background-image: url("../login-assets/sign-in-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 0  150px 0;
+  
+  .contact-container{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    margin:0 auto;
+
+    .app-logo{
+      margin-bottom: 30px;
+    }
+
+    .contact-header{
+      margin-bottom: 10px;
+      color: $white;
+      font-weight: 400;
+      font-size: 35px;
+      font-family: 'Merriweather', serif;
+    }
+
+    h3{
+      color: $white;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+
+    .contact-form{
+      width:38em;
+      display:grid;
+      justify-content: center;
+      grid-template-columns: 38em;
+      grid-template-rows:1em 3em 3em 1em 3em 3em 3.5em;
+      row-gap:2em;
+      column-gap:20px;
+      grid-template-areas:
+      "label-1" 
+      "input-1 "
+      "input-2 "
+      "label-2"
+      "input-3 "
+      "input-4 "
+      "finish";
+      label{
+        font-size:1.3em;
+        color: $white;
+      }
+      input{
+        color: $white1;
+        margin-bottom:1.5em;
+        width:38em;
+        height:3em;
+        border-radius:$borderradius;
+        background-color: transparent;
+        border:.7px solid white;
+        padding-left:2em;
+        justify-content: center;
+        justify-items:center;
+        font-size:1em;
+        &::placeholder{
+          color:#fff;
+        }
+      }
+      .label-1{
+        grid-area:label-1;
+        justify-self: flex-start;
+      }
+      .contact-one-mail{
+        grid-area:input-1;
+      }
+      .phone-number-one{
+        grid-area:input-2;
+      }
+      .label-2{
+        grid-area:label-2;
+        justify-self: flex-start;
+      }
+      .contact-two-mail{
+        grid-area:input-3;
+      }
+      .phone-number-two{
+        grid-area:input-4;
+      }
+      .finish{
+        grid-area:finish;
+        width:9em;
+        height:2.9em;
+        border-radius:$borderradius;
+        border:none;
+        background-color: #1480EC;
+        font-size:$btnsize;
+        justify-self: center;
+        cursor:pointer;
+        color: $white;
+        margin-top: 20px;
+      }
+      .contact-link{
+        text-decoration: none;
+        color:#fff;
+      }
+    }
+  }
+}
+
+
+
+  @media screen and (max-width:425px) {
+    .contact-header{
+      margin-top:3.5em;
+    }
+    .hidden{
+      font-family: 'Pacifico', cursive;
+      display:block;
+      text-align: center;
+      margin:0 auto;
+    }
+    .contact-container{
+      display:flex;
+      align-items: center;
+      flex-direction: column;
+      margin:0 auto;
+    }
+    .contact-form{
+      width:20em;
+      display:grid;
+      justify-content: center;
+      grid-template-columns: 20em;
+      grid-template-rows:1em 3em 3em 1em 3em 3em 3.5em;
+      row-gap:2em;
+      column-gap:20px;
+      grid-template-areas:
+      "label-1" 
+      "input-1 "
+      "input-2 "
+      "label-2"
+      "input-3 "
+      "input-4 "
+      "finish";
+      input{
+        width:19em;
+        justify-self: center;
+      }
+      .label-1{
+        grid-area:label-1;
+        justify-self: flex-start;
+      }
+      .contact-one-mail{
+        grid-area:input-1;
+      }
+      .phone-number-one{
+        grid-area:input-2;
+      }
+      .label-2{
+        grid-area:label-2;
+        justify-self: flex-start;
+      }
+      .contact-two-mail{
+        grid-area:input-3;
+      }
+      .phone-number-two{
+        grid-area:input-4;
+      }
+      .finish{
+        grid-area:finish;
+      }
+    }
+  }
+  /*******Contact End************/
