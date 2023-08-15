@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Nunito+Sans&display=swap");
 /*******Log In Page Start************/
 .sign-in {
   background-image: url("../login-assets/sign-in-bg.svg");
@@ -7,7 +8,7 @@
   background-position: center;
   margin: 0 auto;
   text-align: center;
-  height: 100vh;
+  padding: 30px 0 150px 0;
 }
 .sign-in .form-container {
   display: flex;
@@ -17,13 +18,14 @@
   padding: 2rem;
 }
 .sign-in .form-container .app-logo {
-  margin-bottom: 80px;
-}
-.sign-in .form-container .hidden {
-  display: none;
+  margin-bottom: 40px;
 }
 .sign-in .form-container .login-header {
   margin-bottom: 40px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 37px;
+  font-family: "Merriweather", serif;
 }
 .sign-in .form-container form {
   width: 38em;
@@ -33,48 +35,68 @@
   row-gap: 2em;
   grid-template-areas: "input-1 input-1 input-1" "input-2 input-2 input-2" "forgot  forgot  forgot" "sign-in sign-in sign-in" "sign-up sign-up sign-up";
 }
-.sign-in .form-container form .email {
+.sign-in .form-container form .input {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  padding: 20px 10px 20px 20px;
+}
+.sign-in .form-container form .input::-moz-placeholder {
+  color: #FFE1E1;
+  font-size: 17px;
+}
+.sign-in .form-container form .input::placeholder {
+  color: #FFE1E1;
+  font-size: 17px;
+}
+.sign-in .form-container form .mail {
   grid-area: input-1;
 }
 .sign-in .form-container form .pass {
   grid-area: input-2;
 }
-.sign-in .form-container form .decor {
-  text-decoration: none;
-  color: #fff;
-}
-
-.form-container .forgot-btn {
+.sign-in .form-container form .forgot-btn {
   background-color: transparent;
   color: #4361AF;
   border: none;
-  font-size: 1.3em;
+  font-size: 16px;
   grid-area: forgot;
   justify-self: flex-end;
   margin-left: -120px;
+  margin-top: -40px;
 }
-.form-container .sign-in-btn {
+.sign-in .form-container form a {
   grid-area: sign-in;
-  width: 9em;
+  width: 100%;
   height: 2.9em;
-  padding: 12px 34px;
-  border-radius: 14px;
-  border: none;
-  background-color: #1480EC;
-  font-size: 1.3em;
   justify-self: center;
   cursor: pointer;
+  text-decoration: none;
 }
-.form-container .sign-up {
+.sign-in .form-container form a .sign-in-btn {
+  background-color: #1480EC;
+  padding: 14px 33px;
+  border-radius: 14px;
+  border: none;
+  font-size: 1.3em;
+  color: #fff;
+  width: 25%;
+}
+.sign-in .form-container .sign-up {
+  margin-top: 0;
   grid-area: sign-up;
   font-size: 1.3em;
   word-spacing: 2px;
+  color: #fff;
+  font-weight: 400;
 }
-.form-container .sign-up button {
+.sign-in .form-container .sign-up .decor {
   border: none;
   background-color: transparent;
-  font-size: 1.3em;
   cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  margin-left: 10px;
 }
 
 @media screen and (max-width: 425px) {

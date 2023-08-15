@@ -25,7 +25,7 @@ function Header() {
               <li className='nav-item'><Link to='' className='nav-link'>Meditation</Link></li>
               <li className='nav-item'><Link to='' className='nav-link'>Community</Link></li>
               <li className='nav-item'><Link to='' className='nav-link'>About Us</Link></li>
-              <li className='nav-item'><Link to='/dashboard' className='nav-link'><button className='button'>Sign Up</button></Link></li>
+              <li className='nav-item'><Link to='/sign-in' className='nav-link'><button className='button'>Sign Up</button></Link></li>
             </ul>
             <button className='menu' 
             onClick={() => {
