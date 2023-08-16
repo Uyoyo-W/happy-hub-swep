@@ -23,7 +23,7 @@ function SidePanel() {
         <Link className="decor" to='/exercises'><img src={Activities}></img><p>Exercises</p></Link>
       </div>
       <div className='utility'>
-        <Link className="decor"><img src={Help}></img> <p>Get Help</p></Link>
+        <Link className="decor" to='/get-help'><img src={Help}></img> <p>Get Help</p></Link>
         <Link className="decor" to="/Settings"><img src={SettingsImg}></img><p>Settings</p></Link>
         <Link className="decor"><img src={Log}></img><p>Log Out</p></Link>
       </div>

@@ -1,12 +1,11 @@
 @import '../varMixins';
 
-.the-exercises{
+.getHelp{
     display: flex;
     background-color:#1480EC;
     //height: 100vh;
     padding-bottom: 20px;
-
-    .ai-nav{
+     .ai-nav{
         position:relative;
         //height:99vh;
         width: 25%;
@@ -81,49 +80,79 @@
         }
     }
     .container{
-        background-color: $white;
+        border-radius: 20px;
         width: 74%;
-       @include padding-tb(20px, 0px);
-       border-radius: 20px;
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       margin-top: 20px;
-       .weight{
-        margin: 0px 0 10px 30px;
-       }
-        .exercises{
+        margin-top: 20px;
+        background-color: $white;
+        .alert{
+            margin: 10px 0 10px 30px;
+            img{
+                width: 47px;
+            }
+           }
+        .crisis{
             background-color: $Background2;
-            padding: 60px 30px;
-            padding-bottom: 0;
-            //width: 94%;
-            // height: 100%;
+            padding: 60px 100px;
+            justify-content: center;
+            text-align: center;
             border-radius: 20px;
-            .exercise{
-                h1{
-                    font-size: 25px;
-                    margin: 0 0 5px;
-                    font-weight: 600;
-                }
-                .row{
+            h4{
+                color: $red;
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
+            #p1{
+                font-weight: 600;
+                margin-bottom: 30px;
+            }
+            #p2{
+                font-size: 23px;
+                color: $grey;
+                line-height: 24px;
+            }
+    
+            .econtacts{
+                @include flex-center;
+                flex-direction: column;
+                .econtact{
                     display: flex;
-                    @include flex-wrap;
-                    .box{
-                        width: 31%;
-                        img{
-                            border-radius: 15px; 
-                            width: 100%;   
-                        }
-                        p{
-                            margin-top: 5px;
-                            font-weight: 600;
-                        }
+                    background-color: $blue2;
+                    width: 50%;
+                    margin-bottom: 20px;
+                    padding-left: 20px;
+                    border-radius: 15px;
+                    img{
+                        width: 20px;
+                    }
+                    p{
+                        margin: 10px 0px 10px 30px;
+                        color: $grey2;
+                        font-size: 18px;
+                        font-weight: 600;
+    
                     }
                 }
-            }
-        
-            .movement{
-                margin-top: 35px;
+                #contact2{
+                    background-color: $blue3;
+                    img{
+                        width: 30px;
+                    }
+                }
+    
+                #contact3{
+                    background-color: $Background2;
+                    width: 100%;
+                    margin-bottom: 0px;
+                    padding-left: 0px;
+                    border-radius: 0;
+                    text-align: center;
+                    @include flex-center;
+                    p{
+                        font-size: 22px;
+                        color: $grey;
+                        font-weight: 400;
+                    }
+                }
             }
         }
     }

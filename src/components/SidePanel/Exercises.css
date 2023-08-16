@@ -5,7 +5,7 @@
 }
 .the-exercises .ai-nav {
   position: relative;
-  width: 30%;
+  width: 25%;
 }
 .the-exercises .ai-nav .logo-container {
   grid-area: logo-container;
@@ -72,16 +72,22 @@
 }
 .the-exercises .container {
   background-color: #fff;
-  width: 100%;
+  width: 74%;
   padding-top: 20px;
   padding-bottom: 0px;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+.the-exercises .container .weight {
+  margin: 0px 0 10px 30px;
 }
 .the-exercises .container .exercises {
   background-color: #EEF0F9;
   padding: 60px 30px;
   padding-bottom: 0;
-  width: 94%;
   border-radius: 20px;
 }
 .the-exercises .container .exercises .exercise h1 {

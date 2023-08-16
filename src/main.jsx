@@ -9,8 +9,9 @@ import Info from './components/login-pages/Info';
 import Contact from './components/login-pages/Contact';
 import AiChat from './components/chat-pages/Aichat';
 import Exercises from './components/SidePanel/Exercises';
+import GetHelp from './components/SidePanel/GetHelp';
 // import Settings from './components/chat-pages/Settings';
-// import GetHelp from './components/GetHelp/GetHelp';
+
 import './global.scss';
 
 function App() {
@@ -24,8 +25,9 @@ function App() {
         <Route path="contact" element={< Contact />} />
         <Route path="aiChat" element={< AiChat />} />
         <Route path="exercises" element={< Exercises />} />
+        <Route path="get-help" element={< GetHelp />}  />
         {/*<Route path="settings" element={< Settings />}  />
-        <Route path="get-help" element={< GetHelp />}  /> */}
+         */}
       </Routes>
     </Router>
   );

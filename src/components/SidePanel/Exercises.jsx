@@ -5,6 +5,7 @@ import sit from './assets/sit.png';
 import head from './assets/head.png';
 import belly from './assets/belly.png';
 import abdomen from './assets/abdomen.png';
+import weight from './assets/weight.svg';
 import './Exercises.scss';
 import SidePanel from '../chat-pages/SidePanel';
 import { Link } from 'react-router-dom';
@@ -15,6 +16,9 @@ function Exercises() {
    <div className='the-exercises'>
      <SidePanel/>
     <div className='container'>
+      <div className='weight'>
+        <img src={weight}></img>
+      </div>
       <div className='exercises'>
           <div className='music exercise'>
             <h1>Music</h1>
