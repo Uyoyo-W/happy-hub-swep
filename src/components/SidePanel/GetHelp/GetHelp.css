@@ -1,0 +1,86 @@
+.getHelp {
+  background-color: orange;
+  display: flex;
+}
+.getHelp .sidePanel {
+  background-color: #1480EC;
+  padding: 40px 35px;
+}
+.getHelp .sidePanel .logos {
+  display: flex;
+}
+.getHelp .sidePanel .section .subSection {
+  display: flex;
+}
+.getHelp .sidePanel .middle {
+  margin: 60px 0 150px;
+}
+.getHelp .sidePanel .end {
+  margin: 0;
+}
+.getHelp .crisis {
+  background-color: #EEF0F9;
+  padding: 60px 100px;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+.getHelp .crisis h4 {
+  color: #D92C2C;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.getHelp .crisis #p1 {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.getHelp .crisis #p2 {
+  font-size: 23px;
+  color: #888888;
+  line-height: 24px;
+}
+.getHelp .crisis .contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.getHelp .crisis .contacts .contact {
+  display: flex;
+  background-color: #8ABDF4;
+  width: 50%;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  border-radius: 15px;
+}
+.getHelp .crisis .contacts .contact img {
+  width: 20px;
+}
+.getHelp .crisis .contacts .contact p {
+  margin: 10px 0px 10px 30px;
+  color: #5E5555;
+  font-size: 18px;
+  font-weight: 600;
+}
+.getHelp .crisis .contacts #contact2 {
+  background-color: #8FB6FC;
+}
+.getHelp .crisis .contacts #contact2 img {
+  width: 30px;
+}
+.getHelp .crisis .contacts #contact3 {
+  background-color: #EEF0F9;
+  width: 100%;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  border-radius: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.getHelp .crisis .contacts #contact3 p {
+  font-size: 22px;
+  color: #888888;
+  font-weight: 400;
+}/*# sourceMappingURL=GetHelp.css.map */

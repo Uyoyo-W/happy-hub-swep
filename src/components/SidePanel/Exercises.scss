@@ -1,0 +1,123 @@
+@import '../varMixins';
+
+.the-exercises{
+    display: flex;
+    background-color:#1480EC;
+    //height: 100vh;
+    padding-bottom: 20px;
+
+    .ai-nav{
+        position:relative;
+        //height:99vh;
+        width: 30%;
+        .logo-container{
+            grid-area:logo-container;
+            display:flex;
+            align-items: center;
+            justify-content:left;
+            width:87%;
+            margin:0 auto;
+            gap:40px;
+            padding-top:2em;
+            margin-bottom: 70px;
+            .logo{
+                width: 77px;
+            }
+        }
+        
+        
+        .links{
+            grid-area: links;
+            display:flex;
+            flex-direction: column;
+            justify-items: center;
+            align-content: space-between;
+            font-size: 1.7em;
+            margin-top:2em;
+            padding-left: 40px;
+                
+                .decor{
+                    color:#fff;
+                    text-decoration: none;
+                    //margin-bottom: 20px;
+                    font-size: 22px;
+                    display: flex;
+                    img{
+                        padding-right:13px;
+                    }
+
+                    
+                }
+                .bud{
+                    margin-bottom: 20px;
+                    p{
+                        margin-bottom: 0px;
+                    }
+                }
+        }
+
+        .utility{
+            margin-top: 110px;
+            grid-area: utility;
+            justify-items:center;
+            display:flex;
+            flex-direction: column;
+            padding-left: 40px;
+            .decor{
+                color:#fff;
+                text-decoration: none;
+                display: flex;
+                margin-bottom: 10px;
+                p{
+                    margin-bottom: 5px;
+                    margin-left: 16px;
+                    font-size: 17px;
+                }
+            }
+        }
+
+        .group{
+            @include flex-center;
+        }
+    }
+    .container{
+        background-color: $white;
+        width: 100%;
+       @include padding-tb(20px, 0px);
+       border-radius: 20px;
+        .exercises{
+            background-color: $Background2;
+            padding: 60px 30px;
+            padding-bottom: 0;
+            width: 94%;
+            // height: 100%;
+            border-radius: 20px;
+            .exercise{
+                h1{
+                    font-size: 25px;
+                    margin: 0 0 5px;
+                    font-weight: 600;
+                }
+                .row{
+                    display: flex;
+                    @include flex-wrap;
+                    .box{
+                        width: 31%;
+                        img{
+                            border-radius: 15px; 
+                            width: 100%;   
+                        }
+                        p{
+                            margin-top: 5px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        
+            .movement{
+                margin-top: 35px;
+            }
+        }
+    }
+}
