@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Nunito+Sans&display=swap");
+/*******Contact Start************/
+.contact {
+  background-image: url("../login-assets/sign-in-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 0 150px 0;
+}
+.contact .contact-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.contact .contact-container .app-logo {
+  margin-bottom: 30px;
+}
+.contact .contact-container .contact-header {
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 35px;
+  font-family: "Merriweather", serif;
+}
+.contact .contact-container h3 {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.contact .contact-container .contact-form {
+  width: 38em;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 38em;
+  grid-template-rows: 1em 3em 3em 1em 3em 3em 3.5em;
+  row-gap: 2em;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  grid-template-areas: "label-1" "input-1 " "input-2 " "label-2" "input-3 " "input-4 " "finish";
+}
+.contact .contact-container .contact-form label {
+  font-size: 1.3em;
+  color: #fff;
+}
+.contact .contact-container .contact-form input {
+  color: #FFE1E1;
+  margin-bottom: 1.5em;
+  width: 38em;
+  height: 3em;
+  border-radius: 14px;
+  background-color: transparent;
+  border: 0.7px solid white;
+  padding-left: 2em;
+  justify-content: center;
+  justify-items: center;
+  font-size: 1em;
+}
+.contact .contact-container .contact-form input::-moz-placeholder {
+  color: #fff;
+}
+.contact .contact-container .contact-form input::placeholder {
+  color: #fff;
+}
+.contact .contact-container .contact-form .label-1 {
+  grid-area: label-1;
+  justify-self: flex-start;
+}
+.contact .contact-container .contact-form .contact-one-mail {
+  grid-area: input-1;
+}
+.contact .contact-container .contact-form .phone-number-one {
+  grid-area: input-2;
+}
+.contact .contact-container .contact-form .label-2 {
+  grid-area: label-2;
+  justify-self: flex-start;
+}
+.contact .contact-container .contact-form .contact-two-mail {
+  grid-area: input-3;
+}
+.contact .contact-container .contact-form .phone-number-two {
+  grid-area: input-4;
+}
+.contact .contact-container .contact-form .finish {
+  grid-area: finish;
+  width: 9em;
+  height: 2.9em;
+  border-radius: 14px;
+  border: none;
+  background-color: #1480EC;
+  font-size: 1.3em;
+  justify-self: center;
+  cursor: pointer;
+  color: #fff;
+  margin-top: 20px;
+}
+.contact .contact-container .contact-form .contact-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 425px) {
+  .contact-header {
+    margin-top: 3.5em;
+  }
+  .hidden {
+    font-family: "Pacifico", cursive;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .contact-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .contact-form {
+    width: 20em;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 20em;
+    grid-template-rows: 1em 3em 3em 1em 3em 3em 3.5em;
+    row-gap: 2em;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    grid-template-areas: "label-1" "input-1 " "input-2 " "label-2" "input-3 " "input-4 " "finish";
+  }
+  .contact-form input {
+    width: 19em;
+    justify-self: center;
+  }
+  .contact-form .label-1 {
+    grid-area: label-1;
+    justify-self: flex-start;
+  }
+  .contact-form .contact-one-mail {
+    grid-area: input-1;
+  }
+  .contact-form .phone-number-one {
+    grid-area: input-2;
+  }
+  .contact-form .label-2 {
+    grid-area: label-2;
+    justify-self: flex-start;
+  }
+  .contact-form .contact-two-mail {
+    grid-area: input-3;
+  }
+  .contact-form .phone-number-two {
+    grid-area: input-4;
+  }
+  .contact-form .finish {
+    grid-area: finish;
+  }
+}
+/*******Contact End************//*# sourceMappingURL=Contact.css.map */

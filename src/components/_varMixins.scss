@@ -1,0 +1,174 @@
+// SIZES
+$borderradius:14px;
+$btnsize: 1.3em;
+$justify:center;
+$inputwidth:7em;
+$inputscreenwidth:5em;
+$inputbg:transparent;
+$btnsmallsize:.7em;
+$gridwidth:20em;
+
+
+// COLOURS
+$blue: #1480EC;
+$blue2: #8ABDF4;
+$blue3: #8FB6FC;
+$blue4: #4361AF;
+$lightBlue: rgba(20, 128, 236, 0.60);
+$Background: rgba(255, 255, 255, 0.39);
+$Background2: #EEF0F9;
+$white: #fff;
+$white1: #FFE1E1;
+$pale: rgba(255, 255, 255, 0.70);
+$black: #000;
+$red: #D92C2C;
+$grey: #888888; 
+$grey2: #5E5555;
+
+
+
+
+// MEDIA QUERIES
+$largeDesktop4: 1920px;
+$largeDesktop3: 1880px;
+$largeDesktop2: 1740px;
+$largeDesktop1: 1640px;
+$largeDesktop: 1440px;
+$desktop: 1200px;
+$desktop1: 1142px;
+$desktop2: 1116px;
+$tab: 992px;
+$tablet: 768px;
+$phone1: 590px;
+$phone: 425px;
+
+
+
+@mixin largeDesktop4 {
+    @media (min-width: #{$largeDesktop4}) {
+        @content;
+    }
+
+}
+
+@mixin largeDesktop3 {
+    @media (min-width: #{$largeDesktop3}) {
+        @content;
+    }
+
+}
+
+
+@mixin largeDesktop2 {
+    @media (min-width: #{$largeDesktop2}) {
+        @content;
+    }
+
+}
+
+@mixin largeDesktop1 {
+    @media (min-width: #{$largeDesktop1}) {
+        @content;
+    }
+
+}
+
+@mixin largeDesktop {
+    @media (min-width: #{$largeDesktop}) {
+        @content;
+    }
+
+}
+
+
+@mixin desktop {
+    @media (max-width: #{$desktop}) {
+        @content;
+    }
+
+}
+
+@mixin desktop1 {
+    @media (max-width: #{$desktop1}) {
+        @content;
+    }
+
+}
+
+@mixin desktop2 {
+    @media (max-width: #{$desktop1}) {
+        @content;
+    }
+
+}
+
+@mixin tab {
+    @media (max-width: #{$tab}) {
+        @content;
+    }
+
+}
+
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+
+}
+
+@mixin phone1 {
+    @media (max-width: #{$phone1}) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media (max-width: #{$phone}) {
+        @content;
+    }
+}
+
+//MIXINS
+
+@mixin padding-lr($left, $right){
+    padding-left: $left;
+    padding-right: $right;
+}
+
+@mixin padding-tb($top, $bottom){
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+@mixin margin-lr($left, $right){
+    margin-left: $left;
+    margin-right: $right;
+}
+
+@mixin margin-tb($top, $bottom){
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+@mixin flex-assign($display, $align-items, $justify-content) {
+    display: $display;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
+
+@mixin flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@mixin sectionPadding-lr{
+    padding-left: 70px;
+    padding-right: 70px;
+}

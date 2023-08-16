@@ -1,0 +1,159 @@
+@import '../varMixins';
+
+.getHelp{
+    display: flex;
+    background-color:#1480EC;
+    //height: 100vh;
+    padding-bottom: 20px;
+     .ai-nav{
+        position:relative;
+        //height:99vh;
+        width: 25%;
+        .logo-container{
+            grid-area:logo-container;
+            display:flex;
+            align-items: center;
+            justify-content:left;
+            width:87%;
+            margin:0 auto;
+            gap:40px;
+            padding-top:2em;
+            margin-bottom: 70px;
+            .logo{
+                width: 77px;
+            }
+        }
+        
+        
+        .links{
+            grid-area: links;
+            display:flex;
+            flex-direction: column;
+            justify-items: center;
+            align-content: space-between;
+            font-size: 1.7em;
+            margin-top:2em;
+            padding-left: 40px;
+                
+                .decor{
+                    color:#fff;
+                    text-decoration: none;
+                    //margin-bottom: 20px;
+                    font-size: 22px;
+                    display: flex;
+                    img{
+                        padding-right:13px;
+                    }
+
+                    
+                }
+                .bud{
+                    margin-bottom: 20px;
+                    p{
+                        margin-bottom: 0px;
+                    }
+                }
+        }
+
+        .utility{
+            margin-top: 110px;
+            grid-area: utility;
+            justify-items:center;
+            display:flex;
+            flex-direction: column;
+            padding-left: 40px;
+            .decor{
+                color:#fff;
+                text-decoration: none;
+                display: flex;
+                margin-bottom: 10px;
+                p{
+                    margin-bottom: 5px;
+                    margin-left: 16px;
+                    font-size: 17px;
+                }
+            }
+        }
+
+        .group{
+            @include flex-center;
+        }
+    }
+    .container{
+        border-radius: 20px;
+        width: 74%;
+        margin-top: 20px;
+        background-color: $white;
+        .alert{
+            margin: 10px 0 10px 30px;
+            img{
+                width: 47px;
+            }
+           }
+        .crisis{
+            background-color: $Background2;
+            padding: 60px 100px;
+            justify-content: center;
+            text-align: center;
+            border-radius: 20px;
+            h4{
+                color: $red;
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
+            #p1{
+                font-weight: 600;
+                margin-bottom: 30px;
+            }
+            #p2{
+                font-size: 23px;
+                color: $grey;
+                line-height: 24px;
+            }
+    
+            .econtacts{
+                @include flex-center;
+                flex-direction: column;
+                .econtact{
+                    display: flex;
+                    background-color: $blue2;
+                    width: 50%;
+                    margin-bottom: 20px;
+                    padding-left: 20px;
+                    border-radius: 15px;
+                    img{
+                        width: 20px;
+                    }
+                    p{
+                        margin: 10px 0px 10px 30px;
+                        color: $grey2;
+                        font-size: 18px;
+                        font-weight: 600;
+    
+                    }
+                }
+                #contact2{
+                    background-color: $blue3;
+                    img{
+                        width: 30px;
+                    }
+                }
+    
+                #contact3{
+                    background-color: $Background2;
+                    width: 100%;
+                    margin-bottom: 0px;
+                    padding-left: 0px;
+                    border-radius: 0;
+                    text-align: center;
+                    @include flex-center;
+                    p{
+                        font-size: 22px;
+                        color: $grey;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
