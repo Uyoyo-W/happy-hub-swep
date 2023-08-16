@@ -1,0 +1,117 @@
+.the-exercises {
+  display: flex;
+  background-color: #1480EC;
+  padding-bottom: 20px;
+}
+.the-exercises .ai-nav {
+  position: relative;
+  width: 25%;
+}
+.the-exercises .ai-nav .logo-container {
+  grid-area: logo-container;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 87%;
+  margin: 0 auto;
+  gap: 40px;
+  padding-top: 2em;
+  margin-bottom: 70px;
+}
+.the-exercises .ai-nav .logo-container .logo {
+  width: 77px;
+}
+.the-exercises .ai-nav .links {
+  grid-area: links;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-content: space-between;
+  font-size: 1.7em;
+  margin-top: 2em;
+  padding-left: 40px;
+}
+.the-exercises .ai-nav .links .decor {
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  display: flex;
+}
+.the-exercises .ai-nav .links .decor img {
+  padding-right: 13px;
+}
+.the-exercises .ai-nav .links .bud {
+  margin-bottom: 20px;
+}
+.the-exercises .ai-nav .links .bud p {
+  margin-bottom: 0px;
+}
+.the-exercises .ai-nav .utility {
+  margin-top: 110px;
+  grid-area: utility;
+  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+}
+.the-exercises .ai-nav .utility .decor {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  margin-bottom: 10px;
+}
+.the-exercises .ai-nav .utility .decor p {
+  margin-bottom: 5px;
+  margin-left: 16px;
+  font-size: 17px;
+}
+.the-exercises .ai-nav .group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.the-exercises .container {
+  background-color: #fff;
+  width: 74%;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+.the-exercises .container .weight {
+  margin: 0px 0 10px 30px;
+}
+.the-exercises .container .exercises {
+  background-color: #EEF0F9;
+  padding: 60px 30px;
+  padding-bottom: 0;
+  border-radius: 20px;
+}
+.the-exercises .container .exercises .exercise h1 {
+  font-size: 25px;
+  margin: 0 0 5px;
+  font-weight: 600;
+}
+.the-exercises .container .exercises .exercise .row {
+  display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.the-exercises .container .exercises .exercise .row .box {
+  width: 31%;
+}
+.the-exercises .container .exercises .exercise .row .box img {
+  border-radius: 15px;
+  width: 100%;
+}
+.the-exercises .container .exercises .exercise .row .box p {
+  margin-top: 5px;
+  font-weight: 600;
+}
+.the-exercises .container .exercises .movement {
+  margin-top: 35px;
+}/*# sourceMappingURL=Exercises.css.map */
